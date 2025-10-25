@@ -16,20 +16,20 @@ public class Actor extends Person {
 
         Actor actor = (Actor) o;
         return height == actor.height && //рост
-                Objects.equals(getName(), actor.getName()) && //имя через гет из суперкласса
-                Objects.equals(getSurname(), actor.getSurname()); //фамилия через гет из суперкласс
+                Objects.equals(name, actor.name) && //имя через гет из суперкласса
+                Objects.equals(surname, actor.surname); //фамилия через гет из суперкласс
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getName(), getSurname(), height); //имя, фамилич, рост
+        return Objects.hash(name, surname, height); //имя, фамилич, рост
     }
 
     @Override
     public String toString() {
         return "Actor{" +
-                "name='" + getName() + '\'' +  //имя
-                ", surname='" + getSurname() + '\'' +  // фамилия
+                "name='" + name + '\'' +  //имя
+                ", surname='" + surname + '\'' +  // фамилия
                 " (height=" + height + ")" +  //рост в скобках по ТЗ
                 '}';
     }

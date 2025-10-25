@@ -2,8 +2,8 @@ import java.util.List;
 
 public class MusicalShow extends Show {
 
-    private Person musicAuthor;
-    private String librettoText;
+    protected Person musicAuthor;
+    protected String librettoText;
 
     public MusicalShow(String title, int duration,
                        Director director,

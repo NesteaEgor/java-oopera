@@ -53,7 +53,14 @@ public class Theatre {
         System.out.println("\nЛибретто балета:");
         ballet.printLibrettoText();
 
-        //System.out.println("\nПроверка директора для обычного шоу");
-        //show.printDirectorInfo();
+        System.out.println("\nРежиссёры спектаклей:");
+        System.out.print("Обычный спектакль — ");
+        show.printDirectorInfo();
+
+        System.out.print("Опера — ");
+        opera.printDirectorInfo();
+
+        System.out.print("Балет — ");
+        ballet.printDirectorInfo();
     }
 }

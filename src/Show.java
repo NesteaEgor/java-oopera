@@ -47,14 +47,9 @@ public class Show {
             return;
         }
 
-        // if (listOfActors == null || listOfActors.isEmpty()) {
-        //    System.out.println("Список актёров пуст. Замена невозможна.");
-        //    return;
-        //}
-
         for (int i = 0; i < listOfActors.size(); i++) {
             Actor currentActor = listOfActors.get(i);
-            if (surnameToReplace.equals(currentActor.getSurname())) {
+            if (surnameToReplace.equals(currentActor.surname)) {
                 listOfActors.set(i, newActor);
                 System.out.println("Актёр " + currentActor + "\nзаменён на " + newActor);
                 return;
