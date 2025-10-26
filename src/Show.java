@@ -49,7 +49,7 @@ public class Show {
 
         for (int i = 0; i < listOfActors.size(); i++) {
             Actor currentActor = listOfActors.get(i);
-            if (surnameToReplace.equals(currentActor.surname)) {
+            if (surnameToReplace.equals(currentActor.getSurname())) {
                 listOfActors.set(i, newActor);
                 System.out.println("Актёр " + currentActor + "\nзаменён на " + newActor);
                 return;
